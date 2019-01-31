@@ -1,0 +1,356 @@
+// @import "fonts.scss";
+
+$red: #c98474;
+$blue: #a7d2cb;
+$yellow: #f2d388;
+$text-color: #303952;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+body {
+  // font-family: { put your font here }, sans-serif;
+  color: $text-color;
+
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+
+    &[size="A4"] {
+      width: 21cm;
+      height: 29.7cm;
+    }
+
+    .header {
+      display: flex;
+      width: 21cm;
+      height: 3cm;
+      align-items: center;
+      padding: 2rem;
+      position: relative;
+
+      .icons {
+        position: absolute;
+        width: 21cm;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        div {
+          padding: 0.5rem 1rem;
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 1.6rem;
+            display: inline-block;
+            position: relative;
+            bottom: -1px;
+          }
+        }
+      }
+
+      .profilePicture {
+        flex: 25% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 75%;
+          border-radius: 50%;
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+      }
+
+      .headerContent {
+        flex: 75% 0;
+
+        h1 {
+          font-size: 1.6rem;
+          font-weight: 400;
+
+          span {
+            font-weight: 600;
+          }
+        }
+
+        .subtitle {
+          margin-top: 0.5rem;
+          line-height: 1.1rem;
+
+          span {
+            font-weight: 600;
+            margin: 0 3px;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 0.25rem 2rem;
+
+      h2 {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0.25rem;
+
+        &::before {
+          position: absolute;
+          display: block;
+          left: 3rem;
+          bottom: -0.15rem;
+          content: " ";
+          height: 3px;
+        }
+
+        img {
+          height: 2.4rem;
+          margin-right: 0.5rem;
+        }
+      }
+
+      .experiences {
+        display: flex;
+        flex-direction: column;
+
+        .experience {
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          width: 100%;
+
+          .experienceHeading {
+            display: flex;
+            flex-direction: row;
+
+            .title {
+              flex: 75% 0;
+            }
+
+            .date {
+              flex: 25% 0;
+              text-align: right;
+
+              h3 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+              }
+
+              img {
+                height: 1.6rem;
+              }
+            }
+          }
+
+          .experienceContent {
+            display: flex;
+
+            .description {
+              flex: 50% 0;
+              opacity: 0.9;
+
+              p {
+                margin-top: 0.75rem;
+              }
+            }
+
+            .achievements {
+              flex: 50% 0;
+              padding-left: 1rem;
+              opacity: 0.9;
+
+              h4 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                text-align: right;
+
+                img {
+                  height: 1.6rem;
+                }
+              }
+
+              p {
+                text-align: right;
+                padding-right: 1rem;
+                position: relative;
+                margin-top: 0.5rem;
+
+                &::after {
+                  display: block;
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  transform: translate(-50);
+                  height: 5px;
+                  width: 5px;
+                  border-radius: 50%;
+                  background-color: $red;
+                  content: " ";
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .professionalExperiences {
+        h2 {
+          &::before {
+            border-bottom: 3px dashed lighten($red, 10%);
+            width: 36.5%;
+          }
+        }
+
+        .freelancing {
+          background-color: transparent;
+          margin-bottom: 0 !important;
+
+          .description {
+            flex: 100% 0 !important;
+          }
+        }
+      }
+
+      .scholarExperiences {
+        margin-top: 1rem;
+
+        h2 {
+          &::before {
+            border-bottom: 3px dashed lighten($blue, 10%);
+            width: 30%;
+          }
+        }
+
+        .lion {
+          .subtitle {
+            opacity: 0.8;
+          }
+
+          .soon {
+            padding: 0.25rem;
+            background-color: lighten($blue, 5%);
+            border-radius: 6px;
+            margin-right: 0.25rem;
+            color: white;
+          }
+        }
+      }
+
+      .hobbies {
+        margin-top: 1rem;
+
+        h2 {
+          &::before {
+            border-bottom: 3px dashed lighten($yellow, 10%);
+            width: 37%;
+          }
+        }
+
+        .hobbiesLists {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          opacity: 0.9;
+
+          .list {
+            flex: 50% 0;
+
+            p {
+              padding-left: 1rem;
+              margin-top: 0.5rem;
+              position: relative;
+
+              &.icon {
+                &::after {
+                  background-size: 16px;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-color: transparent !important;
+                  height: 22px;
+                  width: 22px;
+                }
+              }
+
+              &::after {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                background-color: $yellow;
+                content: " ";
+              }
+
+              &.sport {
+                &::after {
+                  background-image: url("/images/icons/sun.svg");
+                }
+              }
+
+              &.movies {
+                &::after {
+                  background-image: url("/images/icons/film.svg");
+                }
+              }
+
+              &.books {
+                &::after {
+                  background-image: url("/images/icons/book.svg");
+                }
+              }
+
+              &.music {
+                &::after {
+                  background-image: url("/images/icons/music.svg");
+                }
+              }
+
+              img {
+                height: 1rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  body,
+  page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
