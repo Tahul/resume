@@ -9,9 +9,11 @@ It's not the cleanest code ever but if you like the template there will be no pa
 # Install & run
 
 You should honestly refer to staticsiteboilerplate documentation, but the commands are:
-`$ npm install // Install dependencies`
-`$ npm run start // Run dev server`
-`$ npm run build:dist // Build for production`
+```bash
+$ npm install // Install dependencies
+$ npm run start // Run dev server
+$ npm run build:dist // Build for production
+```
 
 # Printing / PDF Export
 
