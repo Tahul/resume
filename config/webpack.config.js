@@ -7,7 +7,8 @@ const plugins = require('./webpack.plugins');
 module.exports = {
   context: path.join(config.root, config.paths.src),
   entry: [
-    path.join(config.root, config.paths.src, 'javascripts/scripts.js'),
+    // Enable this in case we need JavaScript, but it shouldn't be the case on a resume.
+    // path.join(config.root, config.paths.src, 'javascripts/scripts.js'),
     path.join(config.root, config.paths.src, 'stylesheets/styles.scss'),
   ],
   output: {

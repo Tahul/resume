@@ -33,14 +33,14 @@ const js = {
 const styleLoader = {
   loader: 'style-loader',
   options: {
-    sourceMap,
+    // sourceMap,
   },
 };
 
 const cssLoader = {
   loader: 'css-loader',
   options: {
-    sourceMap,
+    // sourceMap,
   },
 };
 
@@ -48,6 +48,7 @@ const postcssLoader = {
   loader: 'postcss-loader',
   options: {
     plugins: [
+      // eslint-disable-next-line global-require
       require('autoprefixer')(),
     ],
     sourceMap,
@@ -72,7 +73,7 @@ const sass = {
     {
       loader: 'sass-loader',
       options: {
-        sourceMap,
+        sourceMap: true,
       },
     },
   ],

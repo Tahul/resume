@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "description": "My resume, feel free to copy :)",
-  "version": "1.0.0-beta.4",
+  "version": "1.1.0",
   "homepage": "https://resume.ipseity.fr",
   "author": {
     "name": "Yaël GUILLOUX",
@@ -21,7 +21,6 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
     "start:dist": "cross-env NODE_ENV=production webpack-dev-server --config ./config/webpack.config.js && http-server ./dist -o",
     "setup": "node ./config/site.setup.js",
-    "postinstall": "node ./config/site.setup.js",
     "lint:js": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "build:dist": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
@@ -29,7 +28,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
@@ -41,6 +40,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.22.0",
+    "favicons-webpack-plugin": "^4.2.0",
     "file-loader": "^6.0.0",
     "glob": "^7.1.6",
     "html-loader": "^1.2.1",
@@ -62,7 +62,6 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
     "stylelint-webpack-plugin": "^2.1.0",
-    "webapp-webpack-plugin": "^2.7.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-merge": "^5.1.2",
@@ -71,9 +70,9 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
-    "dploy": "^1.2.0",
     "enquirer": "^2.3.6",
     "figlet": "^1.5.0",
+    "ftp-deploy": "^2.3.7",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "reset-css": "^5.0.1",
