@@ -1,3 +1,5 @@
+@import '../fonts/font.css';
+
 $red: #c98474;
 $blue: #a7d2cb;
 $yellow: #f2d388;
@@ -25,7 +27,7 @@ p {
 }
 
 body {
-  // font-family: { put your font here }, sans-serif;
+  font-family: "CircularStd", sans-serif;
   color: $text-color;
 
   page {
@@ -85,6 +87,7 @@ body {
       }
 
       .headerContent {
+        margin-top: 0.5rem;
         flex: 75% 0;
 
         h1 {
@@ -105,6 +108,12 @@ body {
             margin: 0 3px;
             font-size: 1.1rem;
           }
+        }
+
+        .proverb {
+          margin-top: 0.5rem;
+          font-size: 0.9rem;
+          opacity: 0.85;
         }
       }
     }
@@ -179,27 +188,26 @@ body {
             }
 
             .achievements {
+              position: relative;
               flex: 50% 0;
               padding-left: 1rem;
               opacity: 0.9;
+              z-index: 1;
 
-              h4 {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-end;
-                text-align: right;
-
-                img {
-                  height: 1.6rem;
-                }
+              img {
+                position: absolute;
+                height: 6rem;
+                transform: rotate(18deg);
+                z-index: -1;
+                opacity: 0.33;
+                right: 0;
               }
 
               p {
                 text-align: right;
                 padding-right: 1rem;
                 position: relative;
-                margin-top: 0.5rem;
+                margin-top: 0.75rem;
 
                 &::after {
                   display: block;
