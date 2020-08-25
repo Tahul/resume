@@ -74,14 +74,11 @@ body {
 
   /* PAGE */
   page {
+    width: 21cm;
+    height: auto;
     background: white;
     display: block;
     margin: 0 auto;
-
-    &[size="A4"] {
-      width: 21cm;
-      height: 29.7cm;
-    }
 
     /* RESUME - HEADER */
     .header {
@@ -206,6 +203,8 @@ body {
           .experience-heading {
             display: flex;
             flex-direction: row;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
 
             .title {
               flex: 75% 0;
@@ -362,8 +361,6 @@ body {
 
       /* HOBBIES */
       .hobbies {
-        margin-bottom: 1rem;
-
         .hobbies-list {
           display: flex;
           flex-direction: row;
@@ -435,15 +432,46 @@ body {
   }
 }
 
+.separator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.5rem;
+  margin: 4rem auto;
+  border-radius: 4px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    bottom: -1rem;
+    content: " ";
+    height: 3px;
+    border-bottom: 3px dashed lighten($red, 10%);
+    width: 5%;
+  }
+}
+
+/* SIDE PROJECTS PAGE */
+page:nth-child(2) {
+
+}
+
 /* Print version hidden content */
 @media print {
   body,
   page {
     margin: 0;
     box-shadow: none;
+    width: 21cm;
+    height: 29.7cm;
+  }
 
-    .infos {
-      display: none;
-    }
+  .infos {
+    display: none;
+  }
+
+  .separator {
+    display: none;
   }
 }
