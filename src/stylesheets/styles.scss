@@ -47,6 +47,10 @@ body {
       align-items: center;
       width: 100%;
 
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+
       a {
         cursor: pointer;
       }
@@ -55,6 +59,12 @@ body {
         width: 2rem;
         margin-right: 0.5rem;
       }
+    }
+  }
+
+  @media screen and (max-width: 1670px) {
+    .infos {
+      display: none;
     }
   }
 
@@ -291,6 +301,7 @@ body {
 
       .hobbies {
         margin-top: 1rem;
+        margin-bottom: 1rem;
 
         h2 {
           &::before {
