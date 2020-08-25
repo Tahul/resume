@@ -5,6 +5,7 @@ $blue: #a7d2cb;
 $yellow: #f2d388;
 $text-color: #303952;
 
+/* RESETS */
 h1,
 h2,
 h3,
@@ -31,16 +32,19 @@ a {
   color: $yellow;
 }
 
+/* BODY */
 body {
   font-family: "CircularStd", sans-serif;
   color: $text-color;
 
+  /* INFO BLOCK */
   .infos {
     user-select: none;
     position: fixed;
     left: 0;
     bottom: 0;
-    padding: 4rem;
+    padding: 1rem;
+    font-size: 0.9rem;
 
     p {
       display: flex;
@@ -48,7 +52,7 @@ body {
       width: 100%;
 
       &:not(:first-child) {
-        margin-top: 1rem;
+        margin-top: 0.25rem;
       }
 
       a {
@@ -56,7 +60,7 @@ body {
       }
 
       img {
-        width: 2rem;
+        width: 1.75rem;
         margin-right: 0.5rem;
       }
     }
@@ -68,6 +72,7 @@ body {
     }
   }
 
+  /* PAGE */
   page {
     background: white;
     display: block;
@@ -78,6 +83,7 @@ body {
       height: 29.7cm;
     }
 
+    /* RESUME - HEADER */
     .header {
       display: flex;
       width: 21cm;
@@ -86,6 +92,7 @@ body {
       padding: 3rem;
       position: relative;
 
+      /* HEADER - TOP ICONS */
       .icons {
         position: absolute;
         width: 21cm;
@@ -106,11 +113,13 @@ body {
             display: inline-block;
             position: relative;
             bottom: -1px;
+            margin-right: 0.25rem;
           }
         }
       }
 
-      .profilePicture {
+      /* HEADER - PROFILE PICTURE */
+      .profile-picture {
         flex: 25% 0;
         display: flex;
         align-items: center;
@@ -124,7 +133,8 @@ body {
         }
       }
 
-      .headerContent {
+      /* HEADER - TEXT CONTENT */
+      .header-content {
         margin-top: 0.5rem;
         flex: 75% 0;
 
@@ -149,13 +159,17 @@ body {
         }
 
         .proverb {
-          margin-top: 0.5rem;
-          font-size: 0.9rem;
+          position: relative;
+          text-align: right;
+          width: auto;
           opacity: 0.85;
+          margin-top: 0.5rem;
+          font-size: 0.85rem;
         }
       }
     }
 
+    /* RESUME - CONTENT */
     .content {
       padding: 0.25rem 2rem;
 
@@ -185,11 +199,11 @@ body {
         flex-direction: column;
 
         .experience {
-          margin-top: 0.5rem;
-          margin-bottom: 0.5rem;
+          margin-top: 0.25rem;
+          margin-bottom: 0.25rem;
           width: 100%;
 
-          .experienceHeading {
+          .experience-heading {
             display: flex;
             flex-direction: row;
 
@@ -213,12 +227,13 @@ body {
             }
           }
 
-          .experienceContent {
+          .experience-content {
             display: flex;
 
             .description {
               flex: 50% 0;
               opacity: 0.9;
+              padding-right: 1rem;
 
               p {
                 margin-top: 0.75rem;
@@ -256,11 +271,68 @@ body {
         }
       }
 
-      .professionalExperiences {
+      section {
+        &:not(:first-child) {
+          margin-top: 1rem;
+        }
+
         h2 {
-          &::before {
-            border-bottom: 3px dashed lighten($red, 10%);
-            width: 36.5%;
+          margin-bottom: 1rem;
+
+          &.red-line {
+            &::before {
+              border-bottom: 3px dashed lighten($red, 10%);
+              width: 36.5%;
+            }
+          }
+
+          &.green-line {
+            &::before {
+              border-bottom: 3px dashed lighten($blue, 10%);
+              width: 14%;
+            }
+          }
+
+          &.yellow-line {
+            &::before {
+              border-bottom: 3px dashed lighten($yellow, 10%);
+              width: 37%;
+            }
+          }
+        }
+      }
+
+      /* PROFESSIONAL */
+      .professional {
+        margin-top: -1rem;
+
+        .legend {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 2rem;
+
+          .legend-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 33% 0;
+            text-align: center;
+            width: 100%;
+
+            svg {
+              position: relative;
+              width: 3rem;
+              fill: $red;
+              transform: rotate(-90deg);
+              top: -5px;
+            }
+
+            img {
+              width: 2rem;
+              margin-right: 0.25rem;
+            }
           }
         }
 
@@ -272,45 +344,27 @@ body {
             flex: 100% 0 !important;
           }
         }
-      }
 
-      .scholarExperiences {
-        margin-top: 1rem;
-
-        h2 {
+        .achievements {
           &::before {
-            border-bottom: 3px dashed lighten($blue, 10%);
-            width: 30%;
-          }
-        }
-
-        .lion {
-          .subtitle {
-            opacity: 0.8;
-          }
-
-          .soon {
-            padding: 0.25rem;
-            background-color: lighten($blue, 5%);
-            border-radius: 6px;
-            margin-right: 0.25rem;
-            color: white;
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: 0;
+            content: " ";
+            height: 80%;
+            top: 10%;
+            width: 3px;
+            border-left: 3px dashed lighten($red, 10%);
           }
         }
       }
 
+      /* HOBBIES */
       .hobbies {
-        margin-top: 1rem;
         margin-bottom: 1rem;
 
-        h2 {
-          &::before {
-            border-bottom: 3px dashed lighten($yellow, 10%);
-            width: 37%;
-          }
-        }
-
-        .hobbiesLists {
+        .hobbies-list {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -348,7 +402,7 @@ body {
 
               &.sport {
                 &::after {
-                  background-image: url("/images/icons/sun.svg");
+                  background-image: url("../images/icons/sun.svg");
                 }
               }
 
@@ -381,6 +435,7 @@ body {
   }
 }
 
+/* Print version hidden content */
 @media print {
   body,
   page {
