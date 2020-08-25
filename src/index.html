@@ -6,6 +6,17 @@
     <meta name="description" content="" />
   </head>
   <body>
+  <!-- Infos block, not visible in print mode -->
+    <div class="infos">
+      <p class="print">
+        <img src="./images/icons/printer.svg" /> You can safely <a><b onclick="window.print();return false;">&nbsp;print&nbsp;</b></a> this page.
+      </p>
+
+      <p class="update">
+        <img src="./images/icons/calendar.svg" /> This page was last updated on&nbsp;<b>25/08/2020</b>.
+      </p>
+    </div>
+
     <page size="A4">
       <div class="header">
         <div class="profilePicture">
@@ -14,13 +25,13 @@
         <div class="headerContent">
           <div class="icons">
             <div class="github">
-              <img src="./images/icons/github.svg" />&nbsp;@Tahul
+              <img src="./images/icons/github.svg" />&nbsp;<a href="https://github.com/Tahul" target="_blank">@Tahul</a>
             </div>
             <div class="email">
-              <img src="./images/icons/email.svg" />&nbsp;yael@ipseity.fr
+              <img src="./images/icons/email.svg" />&nbsp;<a href="mailto:yael@ipseity.fr" target="_blank">yael@ipseity.fr</a>
             </div>
             <div class="phone">
-              <img src="./images/icons/phone.svg" />&nbsp;+33 6 64 53 72 18
+              <img src="./images/icons/phone.svg" />&nbsp;<a href="tel:+33664537218" target="_blank">+33 6 64 53 72 18</a>
             </div>
           </div>
           <h1>Hello, I'm <span>Yaël GUILLOUX</span>.</h1>
@@ -45,7 +56,9 @@
             <img src="./images/icons/briefcase.svg" />Professional experiences
           </h2>
           <div class="experiences">
-            <div class="experience product">
+
+            <!-- Web Developer @ Lone Stone -->
+            <div class="experience agency">
               <div class="experienceHeading">
                 <div class="title">
                   <h3>Web Developer @ Lone Stone Consulting (Agency)</h3>
@@ -59,14 +72,13 @@
               <div class="experienceContent">
                 <div class="description">
                   <p>
-                    As the MyGooder project ended, I wanted to widden my field of view concerning <b>web products creation</b>.
+                    As the MyGooder project ended, I wanted to expand my field of view concerning <b>web products creation</b>.
                   </p>
                   <p>
                     I so joined Lone Stone consulting agency to learn from their <b>advanced experience</b>.
                   </p>
                 </div>
                 <div class="achievements">
-                  <img src="./images/icons/star-outline.svg" />
                   <p>
                     Worked on 5 different web apps projects.
                   </p>
@@ -76,6 +88,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Product Owner @ MyGooder -->
             <div class="experience product">
               <div class="experienceHeading">
                 <div class="title">
@@ -100,7 +114,6 @@
                   </p>
                 </div>
                 <div class="achievements">
-                  <img src="./images/icons/star-outline.svg" />
                   <p>
                     Built the frontend (VueJS) while my team did the
                     backend following my specifications.
@@ -109,6 +122,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Growth Hacker @ MyGooder -->
             <div class="experience growth">
               <div class="experienceHeading">
                 <div class="title">
@@ -133,7 +148,6 @@
                   </p>
                 </div>
                 <div class="achievements">
-                  <img src="./images/icons/star-outline.svg" />
                   <p>Reworked the entire onboarding process.</p>
                   <p>
                     Made profit with automated "<i>net-entreprise</i>"
@@ -164,6 +178,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Education -->
         <div class="scholarExperiences">
           <h2><img src="./images/icons/book.svg" />Scholar experiences</h2>
           <div class="experiences">
@@ -197,14 +213,6 @@
                   </h3>
                 </div>
                 <div class="date"><h3>2016</h3></div>
-              </div>
-            </div>
-            <div class="experience">
-              <div class="experienceHeading">
-                <div class="title">
-                  <h3>Baccalaureate – Economics & Social</h3>
-                </div>
-                <div class="date"><h3>2014</h3></div>
               </div>
             </div>
           </div>
