@@ -2,6 +2,8 @@
 
 Final result of this repository: [Yaël GUILLOUX - Resume](https://resume.yael.dev)
 
+If you want you can checkout the [motivation letter template](https://github.com/Tahul/motivation-letter).
+
 I made this with the help of [static-site-boilerplate](http://staticsiteboilerplate.com/).
 
 I also used those cools icons, which I recommend you: [Eva Icon](https://akveo.github.io/eva-icons/)
