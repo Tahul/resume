@@ -1,32 +1,37 @@
-# Yaël GUILLOUX resume :)
+# Yaël GUILLOUX - Resume
 
-I made it with the help of: http://staticsiteboilerplate.com/
+Final result of this repository: [Yaël GUILLOUX - Resume](https://resume.yael.dev)
 
-I also used those cools icons, which I recommend you: https://akveo.github.io/eva-icons/
+I made this with the help of [static-site-boilerplate](http://staticsiteboilerplate.com/).
+
+I also used those cools icons, which I recommend you: [Eva Icon](https://akveo.github.io/eva-icons/)
 
 It's not the cleanest code ever but if you like the template there will be no pain in adapting it to your needs.
 
-# Install & run
+# 👷‍♂️ Setup
 
-You should honestly refer to staticsiteboilerplate documentation, but the commands are:
+You should refer to [static-site-boilerplate](http://staticsiteboilerplate.com/) documentation, but the commands are:
+
 ```bash
-$ npm install // Install dependencies
-$ npm run start // Run dev server
-$ npm run build:dist // Build for production
+$ yarn // Install dependencies
+$ yarn start // Run dev server
+$ yarn run build:dist // Build for production
 ```
 
-# Printing / PDF Export
+# 🖨 Printing
 
 Just run the dev server, `CTRL + P` (on chrome at least).
 
-The content should be centered, and don't ask me why but you can actually go further 29.7cm which is supposed to be the length of a A4 papersheet when printing in PDF.
+The content is centered, and the infos parts of the web page will be hidden.
 
-But that's fine, some more space for your incredible resume is never too much!
+Don't hesitate to change the layout or styling, but you already have a good start with what's included.
 
-# Licence
+# 🔒 Usage
 
 I can't give you the fonts I used for my own resume, because of licensing terms, but I think you'll be able to find some cool fonts somewhere on the internets!
 
-If you have any questions, you can ask me on Twitter: @yaeeelglx
+If you have any questions, you can ask me on Twitter: [@yaeeelglx](https://twitter.com/yaeeelglx)
 
-👋
+If you want to see more of my work, you can take a look at my website: [yael.dev](https://yael.dev)
+
+Bye 👋
