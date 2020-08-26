@@ -208,6 +208,11 @@ body {
 
             .title {
               flex: 75% 0;
+
+              &::before {
+                border-bottom: 3px dashed lighten($yellow, 10%);
+                width: 37%;
+              }
             }
 
             .date {
@@ -311,6 +316,7 @@ body {
           justify-content: space-between;
           align-items: center;
           height: 2rem;
+          font-weight: bold;
 
           .legend-section {
             display: flex;
@@ -454,7 +460,60 @@ body {
 
 /* SIDE PROJECTS PAGE */
 
-/* page:nth-child(2) {} */
+.second-page {
+  .side-projects {
+    p {
+      margin-top: 1rem;
+    }
+
+    .experiences {
+      .experience {
+        .experience-heading {
+          display: flex;
+          align-items: center;
+
+          .title {
+            img {
+              margin-right: 0.5rem;
+            }
+          }
+
+          .date {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            a {
+              margin-right: 0.5rem;
+              opacity: 0.8;
+              font-size: 0.8rem;
+            }
+          }
+
+          h3 {
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .achievements {
+          p {
+            &::after {
+              background-color: $blue !important;
+            }
+          }
+        }
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+
+        margin-top: 2rem;
+      }
+    }
+  }
+}
 
 /* Print version hidden content */
 @media print {
