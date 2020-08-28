@@ -174,7 +174,6 @@ body {
         display: flex;
         align-items: center;
         position: relative;
-        margin-bottom: 0.25rem;
 
         &::before {
           position: absolute;
@@ -186,7 +185,7 @@ body {
         }
 
         img {
-          height: 2.4rem;
+          height: 2rem;
           margin-right: 0.5rem;
         }
       }
@@ -196,15 +195,13 @@ body {
         flex-direction: column;
 
         .experience {
-          margin-top: 0.25rem;
           margin-bottom: 0.25rem;
           width: 100%;
 
           .experience-heading {
             display: flex;
             flex-direction: row;
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
+            padding-top: 0.5rem;
 
             .title {
               flex: 75% 0;
@@ -461,9 +458,11 @@ body {
 /* SIDE PROJECTS PAGE */
 
 .second-page {
+  padding-top: 2rem;
+
   .side-projects {
     p {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
 
     .experiences {
@@ -509,7 +508,7 @@ body {
           height: 32px;
         }
 
-        margin-top: 2rem;
+        margin-top: 1.25rem;
       }
     }
   }
@@ -521,8 +520,9 @@ body {
   page {
     margin: 0;
     box-shadow: none;
-    width: 21cm;
+    width: 100%;
     height: 29.7cm;
+    page-break-after: always;
   }
 
   .infos {
