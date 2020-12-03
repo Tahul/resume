@@ -1,4 +1,4 @@
-@import '../fonts/font.css';
+@import "../fonts/font.css";
 
 $red: #c98474;
 $blue: #a7d2cb;
@@ -425,6 +425,8 @@ body {
               }
 
               img {
+                position: relative;
+                top: 2px;
                 height: 1rem !important;
               }
             }
@@ -534,6 +536,6 @@ body {
   }
 
   .telr .title span {
-      display: none;
+    display: none;
   }
 }
