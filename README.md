@@ -1,23 +1,15 @@
 # Yaël GUILLOUX - Resume
 
-Final result of this repository: [Yaël GUILLOUX - Resume](https://resume.yael.dev)
+[Online render](https://resume.yael.dev) 👀
 
-If you want you can checkout the [motivation letter template](https://github.com/Tahul/motivation-letter).
-
-I made this with the help of [static-site-boilerplate](http://staticsiteboilerplate.com/).
-
-I also used those cools icons, which I recommend you: [Eva Icon](https://akveo.github.io/eva-icons/)
-
-It's not the cleanest code ever but if you like the template there will be no pain in adapting it to your needs.
+Goes along with my [motivation letter template](https://github.com/Tahul/motivation-letter) 😊
 
 # 👷‍♂️ Setup
 
-You should refer to [static-site-boilerplate](http://staticsiteboilerplate.com/) documentation, but the commands are:
-
 ```bash
-$ yarn // Install dependencies
-$ yarn start // Run dev server
-$ yarn run build:dist // Build for production
+$ pnpm // Install dependencies
+$ pnpm dev // Run dev server
+$ pnpm build // Build for production
 ```
 
 # 🖨 Printing
@@ -30,10 +22,8 @@ Don't hesitate to change the layout or styling, but you already have a good star
 
 # 🔒 Usage
 
-I can't give you the fonts I used for my own resume, because of licensing terms, but I think you'll be able to find some cool fonts somewhere on the internets!
+I can't share the fonts I used because of licensing terms, but I think you'll be able to find some cool fonts somewhere on the internets!
 
-If you have any questions, you can ask me on Twitter: [@yaeeelglx](https://twitter.com/yaeeelglx)
+Any questions? you can ask me on Twitter: [@yaeeelglx](https://twitter.com/yaeeelglx)
 
-If you want to see more of my work, you can take a look at my website: [yael.dev](https://yael.dev)
-
-Bye 👋
+[yael.dev](https://yael.dev) 🌐

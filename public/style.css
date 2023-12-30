@@ -1,9 +1,14 @@
 @import "../fonts/font.css";
 
-$red: #c98474;
-$blue: #a7d2cb;
-$yellow: #f2d388;
-$text-color: #303952;
+:root {
+  --red: #c98474;
+  --light-red: #ce9082;
+  --blue: #b0d6d0;
+  --light-blue: #b0d6d0;
+  --yellow: #f2d388;
+  --light-yellow: #f3d794;
+  --text-color: #303952;
+}
 
 /* RESETS */
 h1,
@@ -21,15 +26,15 @@ a {
 }
 
 .red {
-  color: $red;
+  color: var(--red);
 }
 
 .blue {
-  color: $blue;
+  color: var(--blue);
 }
 
 .yellow {
-  color: $yellow;
+  color: var(--yellow);
 }
 
 /* BODY */
@@ -207,7 +212,7 @@ body {
               flex: 75% 0;
 
               &::before {
-                border-bottom: 3px dashed lighten($yellow, 10%);
+                border-bottom: 3px dashed var(--light-yellow);
                 width: 37%;
               }
             }
@@ -263,7 +268,7 @@ body {
                   height: 5px;
                   width: 5px;
                   border-radius: 50%;
-                  background-color: $red;
+                  background-color: var(--red);
                   content: " ";
                 }
               }
@@ -282,21 +287,21 @@ body {
 
           &.red-line {
             &::before {
-              border-bottom: 3px dashed lighten($red, 10%);
+              border-bottom: 3px dashed var(--light-red);
               width: 36.5%;
             }
           }
 
           &.green-line {
             &::before {
-              border-bottom: 3px dashed lighten($blue, 10%);
+              border-bottom: 3px dashed var(--light-blue);
               width: 14%;
             }
           }
 
           &.yellow-line {
             &::before {
-              border-bottom: 3px dashed lighten($yellow, 10%);
+              border-bottom: 3px dashed var(--light-yellow);
               width: 37%;
             }
           }
@@ -326,7 +331,7 @@ body {
             svg {
               position: relative;
               width: 3rem;
-              fill: $red;
+              fill: var(--red);
               transform: rotate(-90deg);
               top: -5px;
             }
@@ -357,7 +362,7 @@ body {
             height: 80%;
             top: 10%;
             width: 3px;
-            border-left: 3px dashed lighten($red, 10%);
+            border-left: 3px dashed var(--light-red);
           }
         }
       }
@@ -396,7 +401,7 @@ body {
                 height: 5px;
                 width: 5px;
                 border-radius: 50%;
-                background-color: $yellow;
+                background-color: var(--yellow);
                 content: " ";
               }
 
@@ -452,7 +457,7 @@ body {
     bottom: -1rem;
     content: " ";
     height: 3px;
-    border-bottom: 3px dashed lighten($red, 10%);
+    border-bottom: 3px dashed var(--light-red);
     width: 5%;
   }
 }
@@ -500,7 +505,7 @@ body {
         .achievements {
           p {
             &::after {
-              background-color: $blue !important;
+              background-color: var(--blue) !important;
             }
           }
         }
